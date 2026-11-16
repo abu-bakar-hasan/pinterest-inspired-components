@@ -1,0 +1,52 @@
+@reference "tailwindcss";
+
+/* This folder owns its presentation and container sizing. */
+@layer components {
+  .sc-package-flight-destinations { width:100%; min-width:0; container-type:inline-size; font-family:var(--font-plus-jakarta-sans, "Plus Jakarta Sans Variable"), sans-serif; color:#0F0F0F; }
+}
+
+
+@layer components {
+  :where(.sc-package-flight-destinations) .sc-new-demo { @apply relative w-full; font-size:3cqw; letter-spacing:-.04em; }
+  :where(.sc-package-flight-destinations) .sc-new-demo button { @apply cursor-pointer; }
+  :where(.sc-package-flight-destinations) .sc-new-demo button:focus-visible { @apply outline-2 outline-offset-4 outline-[#6C47FF]; }
+  :where(.sc-package-flight-destinations) .sc-flight-pair { @apply grid grid-cols-2; gap:5cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-card { @apply relative overflow-hidden bg-white; border:1.2cqw solid white; border-radius:7cqw; box-shadow:0 2cqw 3cqw #00000012; }
+  :where(.sc-package-flight-destinations) .sc-flight-image { @apply relative overflow-hidden; aspect-ratio:.95; border-radius:5.5cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-image img { @apply object-cover; }
+  :where(.sc-package-flight-destinations) .sc-flight-copy { @apply relative; padding:3.5cqw 2cqw 2cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-copy h3 { @apply font-semibold tracking-[-.06em]; font-size:4cqw; line-height:1.15; }
+  :where(.sc-package-flight-destinations) .sc-flight-copy > p { @apply text-[#999]; font-size:2cqw; margin-top:1cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-meta { @apply flex items-center; gap:2cqw; margin:3cqw 0; font-size:2cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-meta span { @apply inline-flex items-center; gap:.8cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-meta svg { width:2cqw; height:2cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-actions { @apply flex; gap:1.3cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-actions > button:first-child { @apply flex-1 bg-[#181818] text-white; padding:2.2cqw .6cqw; border-radius:3cqw; font-size:1.8cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-save { @apply grid shrink-0 place-items-center rounded-full border border-black/5 bg-white text-[#999]; width:7cqw; height:7cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-save svg { width:3cqw; height:3cqw; }
+  :where(.sc-package-flight-destinations) .sc-flight-save[aria-pressed=true] { @apply text-[#ee5672]; }
+  :where(.sc-package-flight-destinations) .sc-flight-save[aria-pressed=true] svg { fill:#ee567225; }
+  :where(.sc-package-flight-destinations) .sc-flight-immersive { @apply flex items-end text-white; }
+  :where(.sc-package-flight-destinations) .sc-flight-immersive .sc-flight-image { @apply absolute inset-0; aspect-ratio:auto; }
+  :where(.sc-package-flight-destinations) .sc-flight-immersive .sc-flight-copy { @apply w-full; padding-top:10cqw; background:linear-gradient(transparent,#000000b3 50%,#000000c9); }
+  :where(.sc-package-flight-destinations) .sc-flight-immersive .sc-flight-copy > p { @apply text-white/65; }
+  :where(.sc-package-flight-destinations) .sc-flight-immersive .sc-flight-actions > button:first-child { @apply bg-white text-black; }
+  :where(.sc-package-flight-destinations) .sc-screen-reader { @apply sr-only; }
+}
+@layer components {
+  :where(.sc-package-flight-destinations) .sc-toast-boundary { @apply relative w-full; isolation:isolate; }
+  :where(.sc-package-flight-destinations) .sc-toast-layer { @apply pointer-events-none absolute inset-0 z-50 grid place-items-center; padding:4%; }
+  :where(.sc-package-flight-destinations) .sc-preview-toast { @apply flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-[#17131f]/90 px-4 py-3 text-center font-medium text-white shadow-sm backdrop-blur-md; max-width:min(100%,340px); font-size:clamp(10px,2.7cqw,14px); line-height:1.5; overflow-wrap:anywhere; animation:scToastLifecycle 2800ms cubic-bezier(.22,1,.36,1) both; }
+  :where(.sc-package-flight-destinations) .sc-preview-toast svg { @apply size-4 shrink-0 text-[#c4b5fd]; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-flight-destinations) .sc-preview-toast { animation-name:scToastFade; } }
+}
+@keyframes scToastLifecycle {
+  0% { opacity:0; transform:translateY(6px) scale(.98); }
+  12%,72% { opacity:1; transform:translateY(0) scale(1); }
+  100% { opacity:0; transform:translateY(-3px) scale(1); }
+}
+@keyframes scToastFade {
+  0% { opacity:0; }
+  8%,78% { opacity:1; }
+  100% { opacity:0; }
+}

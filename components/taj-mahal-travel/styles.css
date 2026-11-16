@@ -1,0 +1,49 @@
+@reference "tailwindcss";
+
+/* This folder owns its presentation and container sizing. */
+@layer components {
+  .sc-package-taj-mahal-travel { width:100%; min-width:0; container-type:inline-size; font-family:var(--font-plus-jakarta-sans, "Plus Jakarta Sans Variable"), sans-serif; color:#0F0F0F; }
+}
+
+@layer components {
+  :where(.sc-package-taj-mahal-travel) .sc-travel-demo { @apply relative w-full; font-size:3.2cqw; letter-spacing:-.04em; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-demo button { @apply cursor-pointer; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-demo button:focus-visible { @apply outline-2 outline-offset-2 outline-[#6C47FF]; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-demo { @apply overflow-hidden border-white bg-[#81b1cc] text-white; border-width:2cqw; border-radius:7cqw; aspect-ratio: .72; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-photo { @apply object-cover; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-info { @apply absolute inset-x-0 bottom-0; padding:7cqw 3cqw 3cqw; background:linear-gradient(transparent,#354d5d80 25%,#35526799); backdrop-filter:blur(8px); mask-image:linear-gradient(transparent,#000 20%); }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-title { @apply flex items-center justify-between; gap:1cqw; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-title h3 { @apply font-semibold; font-size:5cqw; letter-spacing:-.05em; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-info > p { @apply text-white/80; font-size:3.2cqw; margin-top:1cqw; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-bottom { @apply flex items-center justify-between; margin-top:4cqw; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-bottom > strong { @apply rounded-full bg-white/90 font-medium text-black; padding:1.5cqw 3.5cqw; font-size:4.2cqw; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-bottom button { @apply flex items-center rounded-full bg-white/90 font-medium text-black; gap:1.5cqw; padding:1.5cqw 3cqw; font-size:3.6cqw; }
+  :where(.sc-package-taj-mahal-travel) .sc-travel-bottom svg { @apply rounded-full bg-black text-white; width:4cqw; height:4cqw; padding:.5cqw; }
+}
+
+@layer components {
+  :where(.sc-package-taj-mahal-travel) .sc-new-demo { @apply relative w-full; font-size:3cqw; letter-spacing:-.04em; }
+  :where(.sc-package-taj-mahal-travel) .sc-new-demo button { @apply cursor-pointer; }
+  :where(.sc-package-taj-mahal-travel) .sc-new-demo button:focus-visible { @apply outline-2 outline-offset-4 outline-[#6C47FF]; }
+  :where(.sc-package-taj-mahal-travel) .sc-screen-reader { @apply sr-only; }
+}
+
+@layer components {
+  :where(.sc-package-taj-mahal-travel) .sc-toast-boundary { @apply relative w-full; isolation:isolate; }
+  :where(.sc-package-taj-mahal-travel) .sc-toast-layer { @apply pointer-events-none absolute inset-0 z-50 grid place-items-center; padding:4%; }
+  :where(.sc-package-taj-mahal-travel) .sc-preview-toast { @apply flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-[#17131f]/90 px-4 py-3 text-center font-medium text-white shadow-sm backdrop-blur-md; max-width:min(100%,340px); font-size:clamp(10px,2.7cqw,14px); line-height:1.5; overflow-wrap:anywhere; animation:scToastLifecycle 2800ms cubic-bezier(.22,1,.36,1) both; }
+  :where(.sc-package-taj-mahal-travel) .sc-preview-toast svg { @apply size-4 shrink-0 text-[#c4b5fd]; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-taj-mahal-travel) .sc-preview-toast { animation-name:scToastFade; } }
+}
+
+@keyframes scToastLifecycle {
+  0% { opacity:0; transform:translateY(6px) scale(.98); }
+  12%,72% { opacity:1; transform:translateY(0) scale(1); }
+  100% { opacity:0; transform:translateY(-3px) scale(1); }
+}
+
+@keyframes scToastFade {
+  0% { opacity:0; }
+  8%,78% { opacity:1; }
+  100% { opacity:0; }
+}

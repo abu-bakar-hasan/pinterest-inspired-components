@@ -1,0 +1,40 @@
+@reference "tailwindcss";
+
+/* This folder owns its presentation and container sizing. */
+@layer components {
+  .sc-package-porsche-showcase { width:100%; min-width:0; container-type:inline-size; font-family:var(--font-plus-jakarta-sans, "Plus Jakarta Sans Variable"), sans-serif; color:#0F0F0F; }
+}
+
+
+@layer components {
+  :where(.sc-package-porsche-showcase) .sc-new-demo { @apply relative w-full; font-size:3cqw; letter-spacing:-.04em; }
+  :where(.sc-package-porsche-showcase) .sc-new-demo button { @apply cursor-pointer; }
+  :where(.sc-package-porsche-showcase) .sc-new-demo button:focus-visible { @apply outline-2 outline-offset-4 outline-[#6C47FF]; }
+  :where(.sc-package-porsche-showcase) .sc-screen-reader { @apply sr-only; }
+  :where(.sc-package-porsche-showcase) .sc-porsche-demo { @apply overflow-hidden; border:1.2cqw solid #fff; border-radius:6cqw; background:linear-gradient(#d4d4d4,#c3c3c3); box-shadow:0 3cqw 5cqw #00000015; }
+  :where(.sc-package-porsche-showcase) .sc-porsche-image { @apply relative overflow-hidden; aspect-ratio:1.14; }
+  :where(.sc-package-porsche-showcase) .sc-porsche-image img { @apply object-cover; transition:transform .5s ease; }
+  :where(.sc-package-porsche-showcase) .sc-porsche-demo:hover .sc-porsche-image img { transform:scale(1.04); }
+  :where(.sc-package-porsche-showcase) .sc-porsche-copy { padding:5cqw 5cqw 6cqw; }
+  :where(.sc-package-porsche-showcase) .sc-porsche-copy h3 { @apply font-semibold; font-size:7.3cqw; line-height:1.05; letter-spacing:-.06em; }
+  :where(.sc-package-porsche-showcase) .sc-porsche-copy h3 span { @apply block font-normal text-[#777]; }
+  :where(.sc-package-porsche-showcase) .sc-porsche-copy p { @apply text-[#555]; font-size:2.8cqw; line-height:1.45; margin-top:3cqw; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-porsche-showcase) .sc-porsche-image img { transition:none; } }
+}
+@layer components {
+  :where(.sc-package-porsche-showcase) .sc-toast-boundary { @apply relative w-full; isolation:isolate; }
+  :where(.sc-package-porsche-showcase) .sc-toast-layer { @apply pointer-events-none absolute inset-0 z-50 grid place-items-center; padding:4%; }
+  :where(.sc-package-porsche-showcase) .sc-preview-toast { @apply flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-[#17131f]/90 px-4 py-3 text-center font-medium text-white shadow-sm backdrop-blur-md; max-width:min(100%,340px); font-size:clamp(10px,2.7cqw,14px); line-height:1.5; overflow-wrap:anywhere; animation:scToastLifecycle 2800ms cubic-bezier(.22,1,.36,1) both; }
+  :where(.sc-package-porsche-showcase) .sc-preview-toast svg { @apply size-4 shrink-0 text-[#c4b5fd]; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-porsche-showcase) .sc-preview-toast { animation-name:scToastFade; } }
+}
+@keyframes scToastLifecycle {
+  0% { opacity:0; transform:translateY(6px) scale(.98); }
+  12%,72% { opacity:1; transform:translateY(0) scale(1); }
+  100% { opacity:0; transform:translateY(-3px) scale(1); }
+}
+@keyframes scToastFade {
+  0% { opacity:0; }
+  8%,78% { opacity:1; }
+  100% { opacity:0; }
+}

@@ -1,0 +1,46 @@
+@import "swiper/css" layer(base);
+@import "swiper/css/effect-cards" layer(base);
+@import "swiper/css/a11y" layer(base);
+@reference "tailwindcss";
+
+/* This folder owns its presentation and container sizing. */
+@layer components {
+  .sc-package-destination-stack { width:100%; min-width:0; container-type:inline-size; font-family:var(--font-plus-jakarta-sans, "Plus Jakarta Sans Variable"), sans-serif; color:#0F0F0F; }
+}
+
+
+@layer components {
+  :where(.sc-package-destination-stack) .sc-new-demo { @apply relative w-full; font-size:3cqw; letter-spacing:-.04em; }
+  :where(.sc-package-destination-stack) .sc-new-demo button { @apply cursor-pointer; }
+  :where(.sc-package-destination-stack) .sc-new-demo button:focus-visible { @apply outline-2 outline-offset-4 outline-[#6C47FF]; }
+  :where(.sc-package-destination-stack) .sc-destination-demo { padding:8cqw 0; }
+  :where(.sc-package-destination-stack) .sc-destination-deck { @apply relative mx-auto overflow-visible; width:62%; }
+  :where(.sc-package-destination-stack) .sc-destination-deck:focus-visible { @apply outline-2 outline-offset-8 outline-[#6C47FF]; }
+  :where(.sc-package-destination-stack) .sc-destination-slide { @apply h-auto; border-radius:5cqw; }
+  :where(.sc-package-destination-stack) .sc-destination-card { @apply relative w-full bg-white; padding:1.8cqw; border-radius:5cqw; box-shadow:0 2cqw 5cqw #00000010; }
+  :where(.sc-package-destination-stack) .sc-destination-image { @apply relative overflow-hidden; aspect-ratio:.85; border-radius:3.5cqw; }
+  :where(.sc-package-destination-stack) .sc-destination-image img { @apply object-cover; }
+  :where(.sc-package-destination-stack) .sc-destination-plane { @apply absolute rounded-full bg-[#202421] text-white; width:8cqw; height:8cqw; padding:1.5cqw; top:1.2cqw; right:1.2cqw; border:.5cqw solid white; }
+  :where(.sc-package-destination-stack) .sc-destination-caption { @apply flex items-baseline justify-between; gap:1cqw; padding:3cqw .5cqw; }
+  :where(.sc-package-destination-stack) .sc-destination-caption h3 { @apply font-medium; font-size:3.6cqw; line-height:1.1; }
+  :where(.sc-package-destination-stack) .sc-destination-caption p { @apply shrink-0 text-[#888]; font-size:1.8cqw; }
+  :where(.sc-package-destination-stack) .sc-destination-book { @apply w-full bg-[#252525] text-white; border-radius:3cqw; padding:2cqw; font-size:2.3cqw; }
+  :where(.sc-package-destination-stack) .sc-screen-reader { @apply sr-only; }
+}
+@layer components {
+  :where(.sc-package-destination-stack) .sc-toast-boundary { @apply relative w-full; isolation:isolate; }
+  :where(.sc-package-destination-stack) .sc-toast-layer { @apply pointer-events-none absolute inset-0 z-50 grid place-items-center; padding:4%; }
+  :where(.sc-package-destination-stack) .sc-preview-toast { @apply flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-[#17131f]/90 px-4 py-3 text-center font-medium text-white shadow-sm backdrop-blur-md; max-width:min(100%,340px); font-size:clamp(10px,2.7cqw,14px); line-height:1.5; overflow-wrap:anywhere; animation:scToastLifecycle 2800ms cubic-bezier(.22,1,.36,1) both; }
+  :where(.sc-package-destination-stack) .sc-preview-toast svg { @apply size-4 shrink-0 text-[#c4b5fd]; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-destination-stack) .sc-preview-toast { animation-name:scToastFade; } }
+}
+@keyframes scToastLifecycle {
+  0% { opacity:0; transform:translateY(6px) scale(.98); }
+  12%,72% { opacity:1; transform:translateY(0) scale(1); }
+  100% { opacity:0; transform:translateY(-3px) scale(1); }
+}
+@keyframes scToastFade {
+  0% { opacity:0; }
+  8%,78% { opacity:1; }
+  100% { opacity:0; }
+}

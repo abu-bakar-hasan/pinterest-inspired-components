@@ -1,0 +1,151 @@
+@reference "tailwindcss";
+
+/* This folder owns its presentation and container sizing. */
+@layer components {
+  .sc-package-wellness-activity { width:100%; min-width:0; container-type:inline-size; font-family:var(--font-plus-jakarta-sans, "Plus Jakarta Sans Variable"), sans-serif; color:#0F0F0F; }
+}
+
+@layer components {
+  :where(.sc-package-wellness-activity) .sc-wellness-demo { @apply relative w-full; font-size:3.2cqw; letter-spacing:-.04em; }
+  :where(.sc-package-wellness-activity) .sc-wellness-demo button { @apply cursor-pointer; }
+  :where(.sc-package-wellness-activity) .sc-wellness-demo button:focus-visible { @apply outline-2 outline-offset-2 outline-[#6C47FF]; }
+  :where(.sc-package-wellness-activity) .sc-wellness-demo { @apply border border-white/70; border-radius:12cqw; padding:5cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-shell { @apply bg-[#fdfdfd]; padding:4cqw; border-radius:9cqw; box-shadow:0 5cqw 7cqw -5cqw #ac817866; }
+  :where(.sc-package-wellness-activity) .sc-wellness-grid { @apply grid grid-cols-2; gap:3cqw; }
+  :where(.sc-package-wellness-activity) .sc-health-card { @apply min-w-0 text-left; padding:3cqw 2.8cqw; border-radius:5cqw; min-height:27cqw; }
+  :where(.sc-package-wellness-activity) .sc-health-card h3 { @apply flex items-center font-medium; gap:1cqw; font-size:3.1cqw; }
+  :where(.sc-package-wellness-activity) .sc-health-card h3 svg { width:3.8cqw; height:3.8cqw; }
+  :where(.sc-package-wellness-activity) .sc-health-calories { background:linear-gradient(#f5f4f3,#fbefed); --health-color:#ff4f16; }
+  :where(.sc-package-wellness-activity) .sc-health-water { background:linear-gradient(#f3f5f5,#edf6fa); --health-color:#00bdee; }
+  :where(.sc-package-wellness-activity) .sc-health-sleep { background:linear-gradient(#f5f4f2,#fbf0e4); --health-color:#ffb800; }
+  :where(.sc-package-wellness-activity) .sc-health-weight { background:linear-gradient(#f3f6f3,#edfbea); --health-color:#23bd0d; }
+  :where(.sc-package-wellness-activity) .sc-health-card h3 svg { color:var(--health-color); }
+  :where(.sc-package-wellness-activity) .sc-health-value { @apply flex items-end justify-between; margin-top:5cqw; gap:1cqw; }
+  :where(.sc-package-wellness-activity) .sc-health-value strong { @apply block font-semibold tracking-[-.07em]; font-size:4.2cqw; line-height:1; }
+  :where(.sc-package-wellness-activity) .sc-health-value p span { @apply text-[#888]; font-size:2.6cqw; }
+  :where(.sc-package-wellness-activity) .sc-health-ring { width:10cqw; height:10cqw; transform:rotate(-90deg); overflow:visible; }
+  :where(.sc-package-wellness-activity) .sc-health-ring circle { fill:none; stroke:var(--health-color); stroke-width:5; opacity:.15; }
+  :where(.sc-package-wellness-activity) .sc-health-ring circle + circle { opacity:1; stroke-linecap:round; transition:stroke-dasharray .3s; }
+  :where(.sc-package-wellness-activity) .sc-health-bars { @apply flex items-end; gap:.6cqw; height:10cqw; }
+  :where(.sc-package-wellness-activity) .sc-health-bars i { @apply block rounded-full; background:#ffc247; width:1cqw; height:55%; opacity:.25; }
+  :where(.sc-package-wellness-activity) .sc-health-bars i:nth-child(2) { height:75%; }
+  :where(.sc-package-wellness-activity) .sc-health-bars i:nth-child(3) { height:65%; }
+  :where(.sc-package-wellness-activity) .sc-health-bars i:nth-child(4) { height:100%; opacity:1; }
+  :where(.sc-package-wellness-activity) .sc-health-bars i:nth-child(5) { height:80%; }
+  :where(.sc-package-wellness-activity) .sc-health-bars i:nth-child(6) { height:90%; }
+  :where(.sc-package-wellness-activity) .sc-health-bars i:nth-child(7) { height:60%; }
+  :where(.sc-package-wellness-activity) .sc-health-trend { width:15cqw; height:11cqw; }
+  :where(.sc-package-wellness-activity) .sc-health-trend path { fill:none; stroke:#24bb13; stroke-width:2; }
+  :where(.sc-package-wellness-activity) .sc-wellness-bottom { @apply flex items-center; gap:2cqw; margin-top:6cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-nav { @apply flex flex-1 items-center bg-[#faf8f7]; padding:.5cqw; border-radius:10cqw; box-shadow:0 1cqw 2cqw #e9e3e560; }
+  :where(.sc-package-wellness-activity) .sc-wellness-nav button { @apply flex flex-1 flex-col items-center justify-center text-[#777]; height:12cqw; border-radius:8cqw; gap:.5cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-nav button svg { width:4.5cqw; height:4.5cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-nav button span { font-size:1.9cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-nav button[aria-pressed=true] { @apply text-white; background:linear-gradient(135deg,#ff6650,#ff4d13); box-shadow:inset 0 0 1cqw #ffe49d,0 0 1cqw #ffcc7d; }
+  :where(.sc-package-wellness-activity) .sc-wellness-more { @apply grid shrink-0 place-items-center rounded-full text-[#777]; background:linear-gradient(135deg,#eeeae7,#fff); width:12cqw; height:12cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-more svg { width:4cqw; height:4cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-panel { @apply flex flex-col justify-center; min-height:57cqw; padding:4cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-panel h3 { @apply font-bold; font-size:5cqw; margin:3cqw 0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-panel p { @apply text-[#777]; font-size:3cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-panel button { @apply mt-4 self-start rounded-full bg-[#ff561f] px-3 py-2 text-white; font-size:2.5cqw; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-wellness-activity) .sc-health-ring circle + circle { transition:none; } }
+}
+
+@layer components {
+  :where(.sc-package-wellness-activity) .sc-new-demo { @apply relative w-full; font-size:3cqw; letter-spacing:-.04em; }
+  :where(.sc-package-wellness-activity) .sc-new-demo button { @apply cursor-pointer; }
+  :where(.sc-package-wellness-activity) .sc-new-demo button:focus-visible { @apply outline-2 outline-offset-4 outline-[#6C47FF]; }
+  :where(.sc-package-wellness-activity) .sc-screen-reader { @apply sr-only; }
+}
+
+@layer components {
+  :where(.sc-package-wellness-activity) .sc-toast-boundary { @apply relative w-full; isolation:isolate; }
+  :where(.sc-package-wellness-activity) .sc-toast-layer { @apply pointer-events-none absolute inset-0 z-50 grid place-items-center; padding:4%; }
+  :where(.sc-package-wellness-activity) .sc-preview-toast { @apply flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-[#17131f]/90 px-4 py-3 text-center font-medium text-white shadow-sm backdrop-blur-md; max-width:min(100%,340px); font-size:clamp(10px,2.7cqw,14px); line-height:1.5; overflow-wrap:anywhere; animation:scToastLifecycle 2800ms cubic-bezier(.22,1,.36,1) both; }
+  :where(.sc-package-wellness-activity) .sc-preview-toast svg { @apply size-4 shrink-0 text-[#c4b5fd]; }
+  :where(.sc-package-wellness-activity) .sc-wellness-options { @apply absolute z-20 rounded-xl border border-[#e7e5e0] bg-white p-3 shadow-sm; bottom:20cqw; right:7cqw; font-size:2.5cqw; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-wellness-activity) .sc-preview-toast { animation-name:scToastFade; } }
+}
+
+@keyframes scToastLifecycle {
+  0% { opacity:0; transform:translateY(6px) scale(.98); }
+  12%,72% { opacity:1; transform:translateY(0) scale(1); }
+  100% { opacity:0; transform:translateY(-3px) scale(1); }
+}
+
+@keyframes scToastFade {
+  0% { opacity:0; }
+  8%,78% { opacity:1; }
+  100% { opacity:0; }
+}
+
+@layer components {
+  :where(.sc-package-wellness-activity) .sc-wellness-content { height:65cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-content [hidden] { display:none; }
+  :where(.sc-package-wellness-activity) .sc-wellness-grid { height:100%; }
+  :where(.sc-package-wellness-activity) .sc-wellness-view { @apply relative; height:100%; }
+  :where(.sc-package-wellness-activity) .sc-wellness-view h3 { @apply font-bold; font-size:4cqw; line-height:1.2; }
+  :where(.sc-package-wellness-activity) .sc-wellness-view p { @apply text-[#777]; font-size:2.8cqw; margin-top:1cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-view h4 { @apply font-semibold; font-size:3cqw; margin:3cqw 0 2cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-view-header { @apply flex items-start justify-between; gap:1cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-view-header button, :where(.sc-package-wellness-activity) .sc-wellness-view-header select { @apply rounded-xl border-0 bg-[#faf1ef] text-[#333]; padding:1.5cqw; font-size:2cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-view-header button { @apply text-[#ff593b]; font-size:5cqw; line-height:1; }
+  :where(.sc-package-wellness-activity) .sc-fitness-banner { @apply relative overflow-hidden; padding:3.5cqw; height:24cqw; border-radius:4cqw; background:linear-gradient(120deg,#fff1ee,#ffc3be); }
+  :where(.sc-package-wellness-activity) .sc-fitness-banner > span { @apply block text-[#777]; font-size:2.8cqw; margin-top:3cqw; }
+  :where(.sc-package-wellness-activity) .sc-fitness-banner h3, :where(.sc-package-wellness-activity) .sc-fitness-banner p { @apply relative z-10; }
+  :where(.sc-package-wellness-activity) .sc-fitness-dumbbell { @apply absolute flex items-center; right:10cqw; top:8cqw; transform:rotate(-28deg); }
+  :where(.sc-package-wellness-activity) .sc-fitness-dumbbell i { width:6cqw; height:13cqw; border-radius:3cqw; background:linear-gradient(110deg,#ffb4a5,#ff6858 60%,#dc453a); box-shadow:inset .6cqw .3cqw 0 #ffc6b6; }
+  :where(.sc-package-wellness-activity) .sc-fitness-dumbbell b { width:8cqw; height:3cqw; background:linear-gradient(#fff1ed,#bf8e91); }
+  :where(.sc-package-wellness-activity) .sc-fitness-play { @apply absolute grid place-items-center rounded-full bg-white text-[#ff6551]; right:3cqw; bottom:2.5cqw; width:7cqw; height:7cqw; font-size:3cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices { @apply grid grid-cols-4; gap:2cqw; margin-top:3cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices button { @apply flex flex-col items-center justify-center text-[#242424]; height:13cqw; border-radius:3cqw; background:#fff0f2; gap:1cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices button:nth-child(2) { background:#f5edfc; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices button:nth-child(3) { background:#edf7f0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices button:nth-child(4) { background:#fff5e9; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices button[aria-pressed=true] { outline:1px solid #ffb6a5; outline-offset:1px; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices svg { width:5cqw; height:5cqw; color:#fb6374; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices button:nth-child(2) svg { color:#a043e9; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices button:nth-child(3) svg { color:#29bd69; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices button:nth-child(4) svg { color:#f9ad13; }
+  :where(.sc-package-wellness-activity) .sc-wellness-choices span { font-size:2.2cqw; }
+  :where(.sc-package-wellness-activity) .sc-fitness-week { @apply flex justify-between; }
+  :where(.sc-package-wellness-activity) .sc-fitness-week > div { @apply flex flex-col items-center; gap:1cqw; }
+  :where(.sc-package-wellness-activity) .sc-fitness-week > div > div { @apply flex items-end overflow-hidden rounded-full bg-[#f6efef]; width:3.6cqw; height:10cqw; }
+  :where(.sc-package-wellness-activity) .sc-fitness-week i { @apply block w-full rounded-full; background:linear-gradient(#ff715b,#ffa08b); }
+  :where(.sc-package-wellness-activity) .sc-fitness-week span { @apply text-[#777]; font-size:2cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan { @apply relative overflow-hidden; margin-top:5cqw; padding:4cqw; border-radius:4cqw; background:linear-gradient(130deg,#fff0e6,#ffded3 70%,#fff9f7); }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan > span { @apply block text-[#666]; margin-top:6cqw; font-size:2.6cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-target { @apply absolute grid place-items-center rounded-full; right:8cqw; top:3cqw; width:14cqw; height:14cqw; background:repeating-radial-gradient(circle,#ff7057 0 1.5cqw,#fff1e9 1.6cqw 3cqw); transform:rotate(-12deg); box-shadow:1cqw 1cqw 0 #f7957b; color:#ffa300; font-size:13cqw; line-height:1; }
+  :where(.sc-package-wellness-activity) .sc-wellness-target i { display:none; }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan-progress { @apply flex items-center; gap:2cqw; margin-top:1.5cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan-progress progress { @apply w-full overflow-hidden rounded-full border-0; height:2cqw; background:#efe5e3; }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan-progress progress::-webkit-progress-bar { background:#efe5e3; }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan-progress progress::-webkit-progress-value { @apply rounded-full; background:#ff7a62; }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan-progress progress::-moz-progress-bar { background:#ff7a62; }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan-progress strong { font-size:2.5cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-plan-choices { @apply grid-cols-3; margin-top:0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-chart { margin-top:6cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-chart svg { @apply block w-full overflow-visible; }
+  :where(.sc-package-wellness-activity) .sc-wellness-chart-dates { @apply flex justify-between text-[#888]; font-size:2cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats { @apply grid grid-cols-3; gap:2cqw; margin-top:6cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats > div { @apply flex items-center justify-center; gap:1cqw; padding:2.5cqw 1cqw; border-radius:3cqw; background:#eef8eb; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats > div:nth-child(2) { background:#fff3e9; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats > div:nth-child(3) { background:#f7effe; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats svg { width:4cqw; height:4cqw; color:#35bc54; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats > div:nth-child(2) svg { color:#ff6529; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats > div:nth-child(3) svg { color:#a440ec; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats p { @apply m-0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats strong { @apply block text-[#171717]; font-size:2.7cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats span { @apply block; font-size:2.2cqw; margin-top:1cqw; }
+}
+
+@layer components {
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-view { @apply flex flex-col; gap:3cqw; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-view .sc-wellness-view-header { @apply shrink-0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-view .sc-wellness-progress-chart { @apply flex min-h-0 flex-1 flex-col; margin-top:0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-view .sc-wellness-progress-chart svg { @apply min-h-0 flex-1; height:0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-view .sc-wellness-chart-dates { @apply shrink-0; line-height:1.5; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-view .sc-wellness-progress-stats { @apply shrink-0; margin-top:0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats > div { @apply min-w-0; }
+  :where(.sc-package-wellness-activity) .sc-wellness-progress-stats strong { @apply whitespace-nowrap; }
+}

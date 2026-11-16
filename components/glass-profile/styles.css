@@ -1,0 +1,48 @@
+@reference "tailwindcss";
+
+/* This folder owns its presentation and container sizing. */
+@layer components {
+  .sc-package-glass-profile { width:100%; min-width:0; container-type:inline-size; font-family:var(--font-plus-jakarta-sans, "Plus Jakarta Sans Variable"), sans-serif; color:#0F0F0F; }
+}
+
+
+@layer components {
+  :where(.sc-package-glass-profile) .sc-new-demo { @apply relative w-full; font-size:3cqw; letter-spacing:-.04em; }
+  :where(.sc-package-glass-profile) .sc-new-demo button { @apply cursor-pointer; }
+  :where(.sc-package-glass-profile) .sc-new-demo button:focus-visible { @apply outline-2 outline-offset-4 outline-[#6C47FF]; }
+  :where(.sc-package-glass-profile) .sc-screen-reader { @apply sr-only; }
+  :where(.sc-package-glass-profile) .sc-profile-demo { @apply border border-white/90; padding:12cqw 8cqw 8cqw; border-radius:12cqw; background:linear-gradient(170deg,#fafafaa6,#e0e7e7a6 48%,#b8edf1b3); box-shadow:inset 0 .5cqw .3cqw #ffffffa0,0 5cqw 7cqw -6cqw #2f70754d; }
+  :where(.sc-package-glass-profile) .sc-profile-share { @apply absolute; top:8cqw; right:8cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-share svg { width:6cqw; height:6cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-avatar { @apply rounded-full object-cover; width:20cqw; height:20cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-demo h3 { @apply font-medium; font-size:7cqw; line-height:1.1; letter-spacing:-.05em; margin-top:5cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-role { @apply text-[#8a9694]; font-size:4.6cqw; margin-top:1cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-stats { @apply grid grid-cols-3; margin:15cqw 0 8cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-stats > div { @apply flex flex-col-reverse items-center border-r border-white/25 last:border-0; }
+  :where(.sc-package-glass-profile) .sc-profile-stats dt { @apply text-[#869693]; font-size:3.7cqw; margin-top:1cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-stats dd { @apply flex items-center font-medium; font-size:4.8cqw; gap:1cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-stats svg { width:4.5cqw; height:4.5cqw; fill:currentColor; }
+  :where(.sc-package-glass-profile) .sc-profile-actions { @apply flex; gap:3cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-contact { @apply flex-1 border border-white/80 bg-white/10 font-semibold; font-size:4.2cqw; border-radius:6cqw; padding:4cqw 2cqw; box-shadow:inset 0 .5cqw .4cqw #ffffff50; }
+  :where(.sc-package-glass-profile) .sc-profile-save { @apply grid place-items-center rounded-full bg-white/90; width:17cqw; height:17cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-save svg { width:6cqw; height:6cqw; }
+  :where(.sc-package-glass-profile) .sc-profile-save[aria-pressed=true] { @apply text-[#6C47FF]; }
+  :where(.sc-package-glass-profile) .sc-profile-save[aria-pressed=true] svg { fill:#6c47ff25; }
+}
+@layer components {
+  :where(.sc-package-glass-profile) .sc-toast-boundary { @apply relative w-full; isolation:isolate; }
+  :where(.sc-package-glass-profile) .sc-toast-layer { @apply pointer-events-none absolute inset-0 z-50 grid place-items-center; padding:4%; }
+  :where(.sc-package-glass-profile) .sc-preview-toast { @apply flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-[#17131f]/90 px-4 py-3 text-center font-medium text-white shadow-sm backdrop-blur-md; max-width:min(100%,340px); font-size:clamp(10px,2.7cqw,14px); line-height:1.5; overflow-wrap:anywhere; animation:scToastLifecycle 2800ms cubic-bezier(.22,1,.36,1) both; }
+  :where(.sc-package-glass-profile) .sc-preview-toast svg { @apply size-4 shrink-0 text-[#c4b5fd]; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-glass-profile) .sc-preview-toast { animation-name:scToastFade; } }
+}
+@keyframes scToastLifecycle {
+  0% { opacity:0; transform:translateY(6px) scale(.98); }
+  12%,72% { opacity:1; transform:translateY(0) scale(1); }
+  100% { opacity:0; transform:translateY(-3px) scale(1); }
+}
+@keyframes scToastFade {
+  0% { opacity:0; }
+  8%,78% { opacity:1; }
+  100% { opacity:0; }
+}

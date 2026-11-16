@@ -1,0 +1,152 @@
+@reference "tailwindcss";
+
+/* This folder owns its presentation and container sizing. */
+@layer components {
+  .sc-package-membership-dashboard { width:100%; min-width:0; container-type:inline-size; font-family:var(--font-plus-jakarta-sans, "Plus Jakarta Sans Variable"), sans-serif; color:#0F0F0F; }
+}
+
+@layer components {
+  :where(.sc-package-membership-dashboard) .sc-member-demo { @apply relative w-full; font-size:3.2cqw; letter-spacing:-.04em; }
+  :where(.sc-package-membership-dashboard) .sc-member-demo button { @apply cursor-pointer; }
+  :where(.sc-package-membership-dashboard) .sc-member-demo button:focus-visible { @apply outline-2 outline-offset-2 outline-[#6C47FF]; }
+  :where(.sc-package-membership-dashboard) .sc-member-demo { @apply bg-[#f2f2f2]; border-radius:8cqw; padding:5cqw 4cqw 3cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-header { @apply flex items-center justify-between; padding:1cqw 1.5cqw 6cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-header p { @apply text-[#666]; font-size:2.8cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-header h2 { @apply font-bold; font-size:4.2cqw; margin-top:1cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-avatar { @apply rounded-full; width:10cqw; height:10cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-panel { @apply overflow-hidden border border-white bg-[#fafafa]; height:58cqw; border-radius:6cqw; box-shadow:0 1.4cqw 3cqw #5b414124,0 .4cqw 1cqw #0000000d; }
+  :where(.sc-package-membership-dashboard) .sc-member-overview { @apply flex justify-between gap-2; padding:5cqw 4.5cqw 0; }
+  :where(.sc-package-membership-dashboard) .sc-member-tabs { @apply flex bg-[#f3f3f3]; border-radius:1cqw; padding:.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-tabs button { @apply text-[#888]; padding:.5cqw 2.1cqw; font-size:2.8cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-tabs button[aria-pressed=true] { @apply rounded-sm bg-white font-semibold text-black; }
+  :where(.sc-package-membership-dashboard) .sc-member-overview h3 { @apply font-semibold; font-size:3.3cqw; margin-top:3cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-overview p { @apply leading-[1.15] text-[#888]; font-size:2.7cqw; margin-top:.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-total { @apply flex flex-col items-end; }
+  :where(.sc-package-membership-dashboard) .sc-member-total strong { @apply font-normal tracking-[-.06em]; font-size:8cqw; line-height:1.1; }
+  :where(.sc-package-membership-dashboard) .sc-member-total span { @apply whitespace-nowrap text-[#888]; font-size:2.6cqw; margin-top:1.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-chart { @apply relative; margin-top:-1cqw; background:linear-gradient(110deg,#fff0e838,#f3dcf940,#dfe8fd40); }
+  :where(.sc-package-membership-dashboard) .sc-member-chart svg { @apply block w-full; }
+  :where(.sc-package-membership-dashboard) .sc-member-months { @apply flex justify-around text-[#888]; padding:0 3cqw 4cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-months button { padding:.3cqw .9cqw; font-size:2.8cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-months button[aria-pressed=true] { @apply bg-white font-semibold text-black; }
+  :where(.sc-package-membership-dashboard) .sc-member-nav { @apply flex items-center justify-between; padding:6cqw 3cqw 0; }
+  :where(.sc-package-membership-dashboard) .sc-member-nav button { @apply flex flex-col items-center text-[#999]; gap:1cqw; font-size:2.9cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-nav svg { width:7cqw; height:7cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-nav button[aria-selected=true] { @apply font-semibold text-black; }
+  :where(.sc-package-membership-dashboard) .sc-member-nav .sc-member-add { @apply grid place-items-center rounded-full bg-white text-black; width:15cqw; height:15cqw; box-shadow:inset 0 .4cqw .8cqw #0000000a; }
+}
+
+@layer components {
+  :where(.sc-package-membership-dashboard) .sc-new-demo { @apply relative w-full; font-size:3cqw; letter-spacing:-.04em; }
+  :where(.sc-package-membership-dashboard) .sc-new-demo button { @apply cursor-pointer; }
+  :where(.sc-package-membership-dashboard) .sc-new-demo button:focus-visible { @apply outline-2 outline-offset-4 outline-[#6C47FF]; }
+  :where(.sc-package-membership-dashboard) .sc-screen-reader { @apply sr-only; }
+}
+
+@layer components {
+  :where(.sc-package-membership-dashboard) .sc-member-tablist { @apply flex flex-1 items-center justify-between; margin-right:5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-panel.sc-member-home, :where(.sc-package-membership-dashboard) .sc-member-panel.sc-member-chat, :where(.sc-package-membership-dashboard) .sc-member-panel.sc-member-tasks { @apply flex flex-col; padding:4.5cqw; background:linear-gradient(135deg,#fff 5%,#faf7ff 65%,#f1eaff); }
+  :where(.sc-package-membership-dashboard) .sc-member-home-summary { @apply flex w-full items-center text-left; gap:2.5cqw; padding:1cqw 0; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-symbol { @apply grid shrink-0 place-items-center text-[#d93c79]; width:14cqw; height:14cqw; border-radius:5cqw; background:linear-gradient(#fff0f7,#fbdaea); }
+  :where(.sc-package-membership-dashboard) .sc-member-home-symbol svg { width:8cqw; height:8cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-number { @apply flex flex-col; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-number strong { @apply font-bold tracking-[-.06em]; font-size:8.5cqw; line-height:1.05; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-number > span { @apply text-[#888496]; font-size:3.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-faces { @apply ml-auto flex items-center; }
+  :where(.sc-package-membership-dashboard) .sc-member-faces img, :where(.sc-package-membership-dashboard) .sc-member-faces > span { @apply relative shrink-0 rounded-full border-2 border-white object-cover; width:8.5cqw; height:8.5cqw; margin-left:-2.7cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-faces > span { @apply grid place-items-center bg-[#faf8ff] font-bold; font-size:2.2cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-metrics { @apply grid grid-cols-[1fr_1fr_.55fr]; gap:2.5cqw; margin:3cqw 0; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-metrics button { @apply flex items-center text-left; padding:2.5cqw 2cqw; border-radius:4cqw; gap:1.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-metrics svg { @apply shrink-0; width:5cqw; height:5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-metrics strong { @apply block font-bold; font-size:4.4cqw; line-height:1.05; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-metrics small { @apply block text-[#8a8696]; font-size:1.6cqw; margin-top:1cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-metric-active { @apply bg-[#ecf7ed]; }
+  :where(.sc-package-membership-dashboard) .sc-member-metric-active svg { @apply text-[#24b82b]; }
+  :where(.sc-package-membership-dashboard) .sc-member-metric-new { @apply bg-[#f1eaff]; }
+  :where(.sc-package-membership-dashboard) .sc-member-metric-new svg { @apply text-[#8848fa]; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-metrics .sc-member-metric-tasks { @apply justify-center bg-[#eaefff] text-[#469fff]; }
+  :where(.sc-package-membership-dashboard) .sc-member-metric-tasks svg { width:7cqw; height:7cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-activity { @apply mt-auto flex items-center border-t border-[#eae5f2] text-left; gap:4cqw; padding-top:4cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-activity .sc-member-faces { @apply relative ml-0; padding-left:2.7cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-faces-online::after { @apply absolute rounded-full border-2 border-white bg-[#22c55e]; content:''; width:2.6cqw; height:2.6cqw; bottom:0; left:5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-activity strong { @apply block font-medium; font-size:2.7cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-home-activity small { @apply block text-[#8c8799]; font-size:2.2cqw; margin-top:1cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-chat-heading { @apply flex shrink-0 items-center justify-between; gap:2cqw; margin-bottom:3cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-chat-heading h3 { @apply font-semibold; font-size:3.6cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-chat-heading p { @apply text-[#9a92a6]; font-size:2cqw; margin-top:.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-mini-action { @apply grid shrink-0 place-items-center bg-[#fce6f2] text-[#df4089]; width:9cqw; height:9cqw; border-radius:3cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-mini-action svg { width:5cqw; height:5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-chat-list { @apply flex min-h-0 flex-1 flex-col; }
+  :where(.sc-package-membership-dashboard) .sc-member-conversation { @apply flex min-w-0 flex-1 items-center border-b border-[#ede6f4] text-left last:border-b-0; gap:3cqw; padding:1cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-conversation-group { @apply border-b-0 bg-[#eee2ff]; border-radius:5cqw; padding:1.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-chat-avatar { @apply shrink-0 rounded-full object-cover; width:9cqw; height:9cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-group-avatar { @apply grid place-items-center bg-[#dfcbff] text-[#8648fa]; }
+  :where(.sc-package-membership-dashboard) .sc-member-group-avatar svg { width:7cqw; height:7cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-conversation-copy { @apply min-w-0 flex-1; }
+  :where(.sc-package-membership-dashboard) .sc-member-conversation-copy strong { @apply block truncate font-semibold; font-size:2.8cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-conversation-copy small { @apply block truncate text-[#9690a3]; font-size:2.2cqw; margin-top:1cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-conversation-meta { @apply flex shrink-0 flex-col items-end; gap:1.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-conversation-meta > small { @apply text-[#aaa2b7]; font-size:1.7cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-unread-count { @apply grid place-items-center rounded-full bg-[#18131e] text-white; width:4.5cqw; height:4.5cqw; font-size:2.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-unread-dot { @apply rounded-full bg-[#da62bf]; width:2cqw; height:2cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-chat-log { @apply flex min-h-0 flex-1 flex-col overflow-y-auto; gap:2cqw; padding:1cqw; overscroll-behavior:contain; }
+  :where(.sc-package-membership-dashboard) .sc-member-bubble { @apply self-start bg-[#eee5fc] text-[#645574]; max-width:90%; padding:2.5cqw; border-radius:3cqw 3cqw 3cqw 0; font-size:2.6cqw; line-height:1.45; overflow-wrap:anywhere; }
+  :where(.sc-package-membership-dashboard) .sc-member-bubble-sent { @apply self-end bg-[#8054dd] text-white; border-radius:3cqw 3cqw 0 3cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-reply, :where(.sc-package-membership-dashboard) .sc-member-task-form { @apply flex shrink-0 items-center border border-[#e6ddee] bg-white; gap:1cqw; padding:1cqw 1.5cqw; margin-top:2cqw; border-radius:2.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-reply input, :where(.sc-package-membership-dashboard) .sc-member-task-form input { @apply min-w-0 flex-1 bg-transparent outline-none; font-size:2.6cqw; padding:1cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-reply:focus-within, :where(.sc-package-membership-dashboard) .sc-member-task-form:focus-within { @apply outline-2 outline-[#6C47FF]; }
+  :where(.sc-package-membership-dashboard) .sc-member-reply button, :where(.sc-package-membership-dashboard) .sc-member-task-form button { @apply grid place-items-center text-[#8750d8] disabled:cursor-default disabled:opacity-30; padding:1cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-reply svg { width:4.5cqw; height:4.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-summary { @apply flex shrink-0 items-center; gap:3cqw; margin-bottom:2cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-ring { @apply shrink-0; width:17cqw; height:17cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-ring-track { fill:none; stroke:#eee9f4; stroke-width:11; }
+  :where(.sc-package-membership-dashboard) .sc-member-ring-progress { fill:none; stroke-width:11; stroke-linecap:round; transform:rotate(-90deg); transform-origin:center; transition:stroke-dasharray .25s; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-ring text { @apply font-bold; fill:#18141f; font-size:22px; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-numbers { @apply min-w-0 flex-1; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-numbers > div { @apply flex items-center justify-between; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-numbers h3 { @apply font-bold; font-size:5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-numbers p { @apply text-[#968c9e]; font-size:2cqw; margin:0 0 2cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-numbers progress { @apply block w-full overflow-hidden rounded-full; height:2.8cqw; appearance:none; background:#e9e3ef; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-numbers progress::-webkit-progress-bar { background:#e9e3ef; border-radius:20px; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-numbers progress::-webkit-progress-value { background:linear-gradient(90deg,#fb59c7,#8850fa); border-radius:20px; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-numbers progress::-moz-progress-bar { background:linear-gradient(90deg,#fb59c7,#8850fa); border-radius:20px; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-form { margin:0 0 2cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-form button { font-size:2.6cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-list { @apply min-h-0 flex-1 overflow-y-auto border-t border-[#ede6f4]; overscroll-behavior:contain; scrollbar-width:thin; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-list::-webkit-scrollbar { display:block; width:3px; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-list::-webkit-scrollbar-thumb { background:#ded3ee; border-radius:3px; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-list:focus-visible { @apply outline-2 outline-[#6C47FF]; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-row { @apply relative flex cursor-pointer items-center border-b border-[#eee7f3]; gap:3cqw; min-height:7.2cqw; padding:.7cqw .5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-row input { @apply sr-only; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-check { @apply grid shrink-0 place-items-center rounded-full border border-[#aaa3b2] bg-white; width:5.5cqw; height:5.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-row input:focus-visible + .sc-member-task-check { @apply outline-2 outline-offset-2 outline-[#6C47FF]; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-done .sc-member-task-check { @apply border-transparent text-white; background:linear-gradient(135deg,#f56daf,#da3780); }
+  :where(.sc-package-membership-dashboard) .sc-member-task-check svg { width:3.5cqw; height:3.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-title { @apply min-w-0 flex-1 truncate; font-size:2.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-done .sc-member-task-title { @apply text-[#a19aa8] line-through; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-due { @apply grid shrink-0 place-items-center bg-[#fce8f4] text-[#da408a]; width:8cqw; height:5cqw; border-radius:1.8cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-due svg { width:3.5cqw; height:3.5cqw; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-tomorrow { @apply bg-[#ede2ff] text-[#884bfa]; }
+  :where(.sc-package-membership-dashboard) .sc-member-task-done .sc-member-task-due { @apply bg-[#e8f8eb] text-[#21b92b]; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-membership-dashboard) .sc-member-ring-progress { transition:none; } }
+}
+
+@layer components {
+  :where(.sc-package-membership-dashboard) .sc-toast-boundary { @apply relative w-full; isolation:isolate; }
+  :where(.sc-package-membership-dashboard) .sc-toast-layer { @apply pointer-events-none absolute inset-0 z-50 grid place-items-center; padding:4%; }
+  :where(.sc-package-membership-dashboard) .sc-preview-toast { @apply flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-[#17131f]/90 px-4 py-3 text-center font-medium text-white shadow-sm backdrop-blur-md; max-width:min(100%,340px); font-size:clamp(10px,2.7cqw,14px); line-height:1.5; overflow-wrap:anywhere; animation:scToastLifecycle 2800ms cubic-bezier(.22,1,.36,1) both; }
+  :where(.sc-package-membership-dashboard) .sc-preview-toast svg { @apply size-4 shrink-0 text-[#c4b5fd]; }
+  @media (prefers-reduced-motion:reduce) { :where(.sc-package-membership-dashboard) .sc-preview-toast { animation-name:scToastFade; } }
+}
+
+@keyframes scToastLifecycle {
+  0% { opacity:0; transform:translateY(6px) scale(.98); }
+  12%,72% { opacity:1; transform:translateY(0) scale(1); }
+  100% { opacity:0; transform:translateY(-3px) scale(1); }
+}
+
+@keyframes scToastFade {
+  0% { opacity:0; }
+  8%,78% { opacity:1; }
+  100% { opacity:0; }
+}

@@ -1,6 +1,7 @@
 export const membership = {
   slug: 'membership-dashboard',
   name: 'Membership dashboard',
+  designer: { name: 'iconlypro', url: 'https://iconly.pro' },
   category: 'Dashboard · Analytics',
   description: 'A soft, sculpted dashboard for a growing community. Move between a member overview, conversations, enrollment analytics, and a daily task list.',
   designStory: "Each tab shares the same soft surface and compact proportions. Pastel metrics, friendly portraits, a colorful enrollment chart, and a live task ring give each view its own purpose without breaking the visual rhythm.",

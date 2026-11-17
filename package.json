@@ -9,10 +9,12 @@
     "url": "https://github.com/abu-bakar-hasan/pinterest-inspired-components.git"
   },
   "scripts": {
-    "check": "npm run check:folders && npm run typecheck && npm run check:styles",
+    "check": "npm run check:folders && npm run typecheck && npm run check:styles && npm run check:registry",
     "check:folders": "node scripts/verify-component-folders.cjs",
     "typecheck": "tsc --noEmit",
-    "check:styles": "node scripts/verify-styles.cjs"
+    "check:styles": "node scripts/verify-styles.cjs",
+    "build:registry": "node scripts/build-component-registry.cjs",
+    "check:registry": "node scripts/verify-registry.cjs"
   },
   "dependencies": {
     "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
@@ -30,6 +32,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

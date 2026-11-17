@@ -1,0 +1,611 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "pinterest-inspired-components",
+  "homepage": "https://abubakarhasan.com/components",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "destination-stack",
+      "type": "registry:block",
+      "title": "Destination stack",
+      "description": "Eight dream destinations, layered like postcards. Swipe from Cappadocia, the Great Wall, and Giza to Santorini, Kyoto, Bali, Petra, and the Dolomites.",
+      "author": "Abu Bakar Hasan",
+      "dependencies": [
+        "@fontsource-variable/plus-jakarta-sans@^5.3.0",
+        "@hugeicons/core-free-icons@^4.1.1",
+        "@hugeicons/react@^1.1.6",
+        "framer-motion@^12.38.0",
+        "swiper@^14.4.0"
+      ],
+      "files": [
+        {
+          "path": "components/destination-stack/Preview.tsx",
+          "type": "registry:file",
+          "target": "@components/destination-stack/Preview.tsx"
+        },
+        {
+          "path": "components/destination-stack/PreviewToast.tsx",
+          "type": "registry:file",
+          "target": "@components/destination-stack/PreviewToast.tsx"
+        },
+        {
+          "path": "components/destination-stack/content.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/content.ts"
+        },
+        {
+          "path": "components/destination-stack/index.tsx",
+          "type": "registry:file",
+          "target": "@components/destination-stack/index.tsx"
+        },
+        {
+          "path": "components/destination-stack/styles.css",
+          "type": "registry:file",
+          "target": "@components/destination-stack/styles.css"
+        },
+        {
+          "path": "components/destination-stack/assets/abubakarhasan-components-bali.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/assets/abubakarhasan-components-bali.webp.asset.ts"
+        },
+        {
+          "path": "components/destination-stack/assets/abubakarhasan-components-cappadocia.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/assets/abubakarhasan-components-cappadocia.webp.asset.ts"
+        },
+        {
+          "path": "components/destination-stack/assets/abubakarhasan-components-dolomites.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/assets/abubakarhasan-components-dolomites.webp.asset.ts"
+        },
+        {
+          "path": "components/destination-stack/assets/abubakarhasan-components-great-wall.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/assets/abubakarhasan-components-great-wall.webp.asset.ts"
+        },
+        {
+          "path": "components/destination-stack/assets/abubakarhasan-components-kyoto.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/assets/abubakarhasan-components-kyoto.webp.asset.ts"
+        },
+        {
+          "path": "components/destination-stack/assets/abubakarhasan-components-petra.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/assets/abubakarhasan-components-petra.webp.asset.ts"
+        },
+        {
+          "path": "components/destination-stack/assets/abubakarhasan-components-pyramid.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/assets/abubakarhasan-components-pyramid.webp.asset.ts"
+        },
+        {
+          "path": "components/destination-stack/assets/abubakarhasan-components-santorini.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/destination-stack/assets/abubakarhasan-components-santorini.webp.asset.ts"
+        },
+        {
+          "path": "components/destination-stack/INSTALL.md",
+          "type": "registry:file",
+          "target": "@components/destination-stack/INSTALL.md"
+        },
+        {
+          "path": "components/destination-stack/LICENSE",
+          "type": "registry:file",
+          "target": "@components/destination-stack/LICENSE"
+        },
+        {
+          "path": "components/destination-stack/ASSET_CREDITS.md",
+          "type": "registry:file",
+          "target": "@components/destination-stack/ASSET_CREDITS.md"
+        }
+      ],
+      "docs": "Installed Destination stack. Requires Next.js App Router and Tailwind CSS 4. Import the default export from your components/destination-stack folder. See INSTALL.md in that folder.",
+      "meta": {
+        "framework": "Next.js App Router",
+        "react": "19",
+        "tailwind": "4"
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "flight-destinations",
+      "type": "registry:block",
+      "title": "Flight destinations",
+      "description": "Two ways to frame the next escape: an immersive New York card and a clean San Francisco card, with destination details and a simple favourite action.",
+      "author": "Abu Bakar Hasan",
+      "dependencies": [
+        "@fontsource-variable/plus-jakarta-sans@^5.3.0",
+        "@hugeicons/core-free-icons@^4.1.1",
+        "@hugeicons/react@^1.1.6"
+      ],
+      "files": [
+        {
+          "path": "components/flight-destinations/Preview.tsx",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/Preview.tsx"
+        },
+        {
+          "path": "components/flight-destinations/PreviewToast.tsx",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/PreviewToast.tsx"
+        },
+        {
+          "path": "components/flight-destinations/content.ts",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/content.ts"
+        },
+        {
+          "path": "components/flight-destinations/index.tsx",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/index.tsx"
+        },
+        {
+          "path": "components/flight-destinations/styles.css",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/styles.css"
+        },
+        {
+          "path": "components/flight-destinations/assets/abubakarhasan-components-new-york.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/assets/abubakarhasan-components-new-york.webp.asset.ts"
+        },
+        {
+          "path": "components/flight-destinations/assets/abubakarhasan-components-san-francisco.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/assets/abubakarhasan-components-san-francisco.webp.asset.ts"
+        },
+        {
+          "path": "components/flight-destinations/INSTALL.md",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/INSTALL.md"
+        },
+        {
+          "path": "components/flight-destinations/LICENSE",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/LICENSE"
+        },
+        {
+          "path": "components/flight-destinations/ASSET_CREDITS.md",
+          "type": "registry:file",
+          "target": "@components/flight-destinations/ASSET_CREDITS.md"
+        }
+      ],
+      "docs": "Installed Flight destinations. Requires Next.js App Router and Tailwind CSS 4. Import the default export from your components/flight-destinations folder. See INSTALL.md in that folder.",
+      "meta": {
+        "framework": "Next.js App Router",
+        "react": "19",
+        "tailwind": "4"
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "glass-profile",
+      "type": "registry:block",
+      "title": "Glass profile",
+      "description": "A frosted profile card with a cool cyan wash, a friendly portrait, and clear creator statistics. Contact, save, and share actions sit quietly around the content.",
+      "author": "Abu Bakar Hasan",
+      "dependencies": [
+        "@fontsource-variable/plus-jakarta-sans@^5.3.0",
+        "@hugeicons/core-free-icons@^4.1.1",
+        "@hugeicons/react@^1.1.6"
+      ],
+      "files": [
+        {
+          "path": "components/glass-profile/Preview.tsx",
+          "type": "registry:file",
+          "target": "@components/glass-profile/Preview.tsx"
+        },
+        {
+          "path": "components/glass-profile/PreviewToast.tsx",
+          "type": "registry:file",
+          "target": "@components/glass-profile/PreviewToast.tsx"
+        },
+        {
+          "path": "components/glass-profile/content.ts",
+          "type": "registry:file",
+          "target": "@components/glass-profile/content.ts"
+        },
+        {
+          "path": "components/glass-profile/index.tsx",
+          "type": "registry:file",
+          "target": "@components/glass-profile/index.tsx"
+        },
+        {
+          "path": "components/glass-profile/styles.css",
+          "type": "registry:file",
+          "target": "@components/glass-profile/styles.css"
+        },
+        {
+          "path": "components/glass-profile/assets/abubakarhasan-components-portrait.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/glass-profile/assets/abubakarhasan-components-portrait.webp.asset.ts"
+        },
+        {
+          "path": "components/glass-profile/INSTALL.md",
+          "type": "registry:file",
+          "target": "@components/glass-profile/INSTALL.md"
+        },
+        {
+          "path": "components/glass-profile/LICENSE",
+          "type": "registry:file",
+          "target": "@components/glass-profile/LICENSE"
+        },
+        {
+          "path": "components/glass-profile/ASSET_CREDITS.md",
+          "type": "registry:file",
+          "target": "@components/glass-profile/ASSET_CREDITS.md"
+        }
+      ],
+      "docs": "Installed Glass profile. Requires Next.js App Router and Tailwind CSS 4. Import the default export from your components/glass-profile folder. See INSTALL.md in that folder.",
+      "meta": {
+        "framework": "Next.js App Router",
+        "react": "19",
+        "tailwind": "4"
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "landscape-themes",
+      "type": "registry:block",
+      "title": "Landscape themes",
+      "description": "Three atmospheric landscape cards, from snow-covered peaks to the last light on the Alps and warm Sahara dunes. A compact theme-picker concept with an image-first layout.",
+      "author": "Abu Bakar Hasan",
+      "dependencies": [
+        "@fontsource-variable/plus-jakarta-sans@^5.3.0",
+        "@hugeicons/core-free-icons@^4.1.1",
+        "@hugeicons/react@^1.1.6"
+      ],
+      "files": [
+        {
+          "path": "components/landscape-themes/Preview.tsx",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/Preview.tsx"
+        },
+        {
+          "path": "components/landscape-themes/PreviewToast.tsx",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/PreviewToast.tsx"
+        },
+        {
+          "path": "components/landscape-themes/content.ts",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/content.ts"
+        },
+        {
+          "path": "components/landscape-themes/index.tsx",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/index.tsx"
+        },
+        {
+          "path": "components/landscape-themes/styles.css",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/styles.css"
+        },
+        {
+          "path": "components/landscape-themes/assets/abubakarhasan-components-alps.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/assets/abubakarhasan-components-alps.webp.asset.ts"
+        },
+        {
+          "path": "components/landscape-themes/assets/abubakarhasan-components-desert.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/assets/abubakarhasan-components-desert.webp.asset.ts"
+        },
+        {
+          "path": "components/landscape-themes/assets/abubakarhasan-components-snow.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/assets/abubakarhasan-components-snow.webp.asset.ts"
+        },
+        {
+          "path": "components/landscape-themes/INSTALL.md",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/INSTALL.md"
+        },
+        {
+          "path": "components/landscape-themes/LICENSE",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/LICENSE"
+        },
+        {
+          "path": "components/landscape-themes/ASSET_CREDITS.md",
+          "type": "registry:file",
+          "target": "@components/landscape-themes/ASSET_CREDITS.md"
+        }
+      ],
+      "docs": "Installed Landscape themes. Requires Next.js App Router and Tailwind CSS 4. Import the default export from your components/landscape-themes folder. See INSTALL.md in that folder.",
+      "meta": {
+        "framework": "Next.js App Router",
+        "react": "19",
+        "tailwind": "4"
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "membership-dashboard",
+      "type": "registry:block",
+      "title": "Membership dashboard",
+      "description": "A soft, sculpted dashboard for a growing community. Move between a member overview, conversations, enrollment analytics, and a daily task list.",
+      "author": "Abu Bakar Hasan",
+      "dependencies": [
+        "@fontsource-variable/plus-jakarta-sans@^5.3.0",
+        "@hugeicons/core-free-icons@^4.1.1",
+        "@hugeicons/react@^1.1.6"
+      ],
+      "files": [
+        {
+          "path": "components/membership-dashboard/MembershipTabs.tsx",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/MembershipTabs.tsx"
+        },
+        {
+          "path": "components/membership-dashboard/Preview.tsx",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/Preview.tsx"
+        },
+        {
+          "path": "components/membership-dashboard/PreviewToast.tsx",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/PreviewToast.tsx"
+        },
+        {
+          "path": "components/membership-dashboard/content.ts",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/content.ts"
+        },
+        {
+          "path": "components/membership-dashboard/index.tsx",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/index.tsx"
+        },
+        {
+          "path": "components/membership-dashboard/styles.css",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/styles.css"
+        },
+        {
+          "path": "components/membership-dashboard/assets/abubakarhasan-components-amina.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/assets/abubakarhasan-components-amina.webp.asset.ts"
+        },
+        {
+          "path": "components/membership-dashboard/assets/abubakarhasan-components-daniel.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/assets/abubakarhasan-components-daniel.webp.asset.ts"
+        },
+        {
+          "path": "components/membership-dashboard/assets/abubakarhasan-components-learning-avatar.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/assets/abubakarhasan-components-learning-avatar.webp.asset.ts"
+        },
+        {
+          "path": "components/membership-dashboard/assets/abubakarhasan-components-leo.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/assets/abubakarhasan-components-leo.webp.asset.ts"
+        },
+        {
+          "path": "components/membership-dashboard/INSTALL.md",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/INSTALL.md"
+        },
+        {
+          "path": "components/membership-dashboard/LICENSE",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/LICENSE"
+        },
+        {
+          "path": "components/membership-dashboard/ASSET_CREDITS.md",
+          "type": "registry:file",
+          "target": "@components/membership-dashboard/ASSET_CREDITS.md"
+        }
+      ],
+      "docs": "Installed Membership dashboard. Requires Next.js App Router and Tailwind CSS 4. Import the default export from your components/membership-dashboard folder. See INSTALL.md in that folder.",
+      "meta": {
+        "designer": {
+          "name": "iconlypro",
+          "url": "https://iconly.pro"
+        },
+        "framework": "Next.js App Router",
+        "react": "19",
+        "tailwind": "4"
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "porsche-showcase",
+      "type": "registry:block",
+      "title": "Porsche 911 showcase",
+      "description": "An editorial automotive card built around the silhouette of an ice-grey Porsche 911 GT3 RS, a red wheel, and a quiet, glass-like frame.",
+      "author": "Abu Bakar Hasan",
+      "dependencies": [
+        "@fontsource-variable/plus-jakarta-sans@^5.3.0",
+        "@hugeicons/core-free-icons@^4.1.1",
+        "@hugeicons/react@^1.1.6"
+      ],
+      "files": [
+        {
+          "path": "components/porsche-showcase/Preview.tsx",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/Preview.tsx"
+        },
+        {
+          "path": "components/porsche-showcase/PreviewToast.tsx",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/PreviewToast.tsx"
+        },
+        {
+          "path": "components/porsche-showcase/content.ts",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/content.ts"
+        },
+        {
+          "path": "components/porsche-showcase/index.tsx",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/index.tsx"
+        },
+        {
+          "path": "components/porsche-showcase/styles.css",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/styles.css"
+        },
+        {
+          "path": "components/porsche-showcase/assets/abubakarhasan-components-porsche.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/assets/abubakarhasan-components-porsche.webp.asset.ts"
+        },
+        {
+          "path": "components/porsche-showcase/INSTALL.md",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/INSTALL.md"
+        },
+        {
+          "path": "components/porsche-showcase/LICENSE",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/LICENSE"
+        },
+        {
+          "path": "components/porsche-showcase/ASSET_CREDITS.md",
+          "type": "registry:file",
+          "target": "@components/porsche-showcase/ASSET_CREDITS.md"
+        }
+      ],
+      "docs": "Installed Porsche 911 showcase. Requires Next.js App Router and Tailwind CSS 4. Import the default export from your components/porsche-showcase folder. See INSTALL.md in that folder.",
+      "meta": {
+        "framework": "Next.js App Router",
+        "react": "19",
+        "tailwind": "4"
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "taj-mahal-travel",
+      "type": "registry:block",
+      "title": "Taj Mahal escape",
+      "description": "An image-led travel card with a frosted information panel and a clear booking action. A small invitation to explore something extraordinary.",
+      "author": "Abu Bakar Hasan",
+      "dependencies": [
+        "@fontsource-variable/plus-jakarta-sans@^5.3.0",
+        "@hugeicons/core-free-icons@^4.1.1",
+        "@hugeicons/react@^1.1.6"
+      ],
+      "files": [
+        {
+          "path": "components/taj-mahal-travel/Preview.tsx",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/Preview.tsx"
+        },
+        {
+          "path": "components/taj-mahal-travel/PreviewToast.tsx",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/PreviewToast.tsx"
+        },
+        {
+          "path": "components/taj-mahal-travel/content.ts",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/content.ts"
+        },
+        {
+          "path": "components/taj-mahal-travel/index.tsx",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/index.tsx"
+        },
+        {
+          "path": "components/taj-mahal-travel/styles.css",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/styles.css"
+        },
+        {
+          "path": "components/taj-mahal-travel/assets/abubakarhasan-components-taj-mahal.webp.asset.ts",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/assets/abubakarhasan-components-taj-mahal.webp.asset.ts"
+        },
+        {
+          "path": "components/taj-mahal-travel/INSTALL.md",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/INSTALL.md"
+        },
+        {
+          "path": "components/taj-mahal-travel/LICENSE",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/LICENSE"
+        },
+        {
+          "path": "components/taj-mahal-travel/ASSET_CREDITS.md",
+          "type": "registry:file",
+          "target": "@components/taj-mahal-travel/ASSET_CREDITS.md"
+        }
+      ],
+      "docs": "Installed Taj Mahal escape. Requires Next.js App Router and Tailwind CSS 4. Import the default export from your components/taj-mahal-travel folder. See INSTALL.md in that folder.",
+      "meta": {
+        "framework": "Next.js App Router",
+        "react": "19",
+        "tailwind": "4"
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "wellness-activity",
+      "type": "registry:block",
+      "title": "Wellness activity",
+      "description": "A gentle daily check-in for calories, hydration, sleep, and weight. Pastel metric cards and a floating navigation bar make your daily routine feel a little lighter.",
+      "author": "Abu Bakar Hasan",
+      "dependencies": [
+        "@fontsource-variable/plus-jakarta-sans@^5.3.0",
+        "@hugeicons/core-free-icons@^4.1.1",
+        "@hugeicons/react@^1.1.6"
+      ],
+      "files": [
+        {
+          "path": "components/wellness-activity/Preview.tsx",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/Preview.tsx"
+        },
+        {
+          "path": "components/wellness-activity/PreviewToast.tsx",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/PreviewToast.tsx"
+        },
+        {
+          "path": "components/wellness-activity/WellnessTabs.tsx",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/WellnessTabs.tsx"
+        },
+        {
+          "path": "components/wellness-activity/content.ts",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/content.ts"
+        },
+        {
+          "path": "components/wellness-activity/index.tsx",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/index.tsx"
+        },
+        {
+          "path": "components/wellness-activity/styles.css",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/styles.css"
+        },
+        {
+          "path": "components/wellness-activity/INSTALL.md",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/INSTALL.md"
+        },
+        {
+          "path": "components/wellness-activity/LICENSE",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/LICENSE"
+        },
+        {
+          "path": "components/wellness-activity/ASSET_CREDITS.md",
+          "type": "registry:file",
+          "target": "@components/wellness-activity/ASSET_CREDITS.md"
+        }
+      ],
+      "docs": "Installed Wellness activity. Requires Next.js App Router and Tailwind CSS 4. Import the default export from your components/wellness-activity folder. See INSTALL.md in that folder.",
+      "meta": {
+        "framework": "Next.js App Router",
+        "react": "19",
+        "tailwind": "4"
+      }
+    }
+  ]
+}
